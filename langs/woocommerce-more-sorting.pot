@@ -1,0 +1,471 @@
+#: woocommerce-more-sorting.php:118
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:97
+msgid "Settings"
+msgstr ""
+
+#: woocommerce-more-sorting.php:121
+msgid "Unlock all"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:21
+msgid "Default sorting"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:22
+msgid "Sort by popularity"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:23
+msgid "Sort by average rating"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:24
+msgid "Sort by newness"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:25
+msgid "Sort by price: low to high"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:26
+msgid "Sort by price: high to low"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:47
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:26
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:79
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:84
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:108
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:179
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:45
+msgid "Custom Meta Sorting"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:74
+msgid "Sort by date"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:74
+#: includes/alg-wc-more-sorting-functions.php:87
+#: includes/alg-wc-more-sorting-functions.php:89
+#: includes/alg-wc-more-sorting-functions.php:91
+msgid "ascending"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:75
+#: includes/alg-wc-more-sorting-functions.php:76
+msgid "Sort by title"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:75
+#: includes/alg-wc-more-sorting-functions.php:77
+msgid "A to Z"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:76
+#: includes/alg-wc-more-sorting-functions.php:78
+msgid "Z to A"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:77
+#: includes/alg-wc-more-sorting-functions.php:78
+msgid "Sort by slug"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:79
+#: includes/alg-wc-more-sorting-functions.php:80
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-sorting.php:65
+msgid "Sort by SKU"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:79
+#: includes/alg-wc-more-sorting-functions.php:81
+#: includes/alg-wc-more-sorting-functions.php:83
+msgid "low to high"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:80
+#: includes/alg-wc-more-sorting-functions.php:82
+#: includes/alg-wc-more-sorting-functions.php:84
+msgid "high to low"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:81
+#: includes/alg-wc-more-sorting-functions.php:82
+msgid "Sort by stock quantity"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:83
+#: includes/alg-wc-more-sorting-functions.php:84
+msgid "Sort by total sales"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:85
+#: includes/alg-wc-more-sorting-functions.php:86
+msgid "Sort by last modified date"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:85
+msgid "oldest to newest"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:86
+msgid "newest to oldest"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:87
+#: includes/alg-wc-more-sorting-functions.php:88
+msgid "Sort by author ID"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:88
+#: includes/alg-wc-more-sorting-functions.php:90
+#: includes/alg-wc-more-sorting-functions.php:92
+msgid "descending"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:89
+#: includes/alg-wc-more-sorting-functions.php:90
+msgid "Sort by product ID"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:91
+#: includes/alg-wc-more-sorting-functions.php:92
+msgid "Sort by number of comments"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:93
+msgid "Random sorting"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:94
+msgid "No sorting"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-advanced.php:26
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:69
+msgid "Advanced"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-advanced.php:39
+msgid "Advanced: Restore Default WooCommerce Sorting"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-advanced.php:40
+msgid ""
+"Some themes (e.g. Avada) replaces default WooCommerce sorting with theme's "
+"custom. With theme's custom sorting some (or all) plugin's option may not "
+"function. You can restore default WooCommerce sorting here."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-advanced.php:45
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:113
+msgid "Enable/Disable"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-advanced.php:46
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:85
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-sorting.php:47
+#: includes/admin/class-alg-wc-more-sorting-settings-default-wc-sorting.php:45
+#: includes/admin/class-alg-wc-more-sorting-settings-rearrange-sorting.php:68
+#: includes/admin/class-alg-wc-more-sorting-settings-remove-sorting.php:79
+msgid "Enable Section"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-advanced.php:52
+msgid "Theme"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-advanced.php:57
+msgid "Avada"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-advanced.php:58
+msgid "Avada (no CSS)"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-advanced.php:59
+msgid "Revo"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-advanced.php:60
+msgid "Revo (no CSS)"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-advanced.php:61
+msgid "Other"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:43
+msgid "Save changes"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:91
+msgid "Total Options"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:92
+msgid "Save changes after you update this number."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:97
+#, php-format
+msgid ""
+"You will need <a target=\"_blank\" href=\"%s\">More Sorting Options for "
+"WooCommerce Pro</a> plugin to add more than one custom meta sorting."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:114
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:101
+msgid "Enabled"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:120
+msgid "Type"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:125
+msgid "Text"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:126
+msgid "Numbers"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:131
+msgid "Meta Key"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:132
+msgid "For example try \"total_sales\" or \"_sku\" or \"_stock\"."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:139
+msgid "Secondary Sorting"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:144
+msgid "None"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:145
+msgid "ID"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:146
+msgid "Parent ID"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:147
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:177
+msgid "Title"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:148
+msgid "Name (i.e. slug)"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:149
+msgid "Date"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:150
+msgid "Last modified date"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:151
+msgid "Author"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:152
+msgid "Random"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:153
+msgid "Comment count"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:158
+msgid "Order"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:163
+msgid "Ascending"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:164
+msgid "Descending"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:169
+msgid "Parameter"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:170
+msgid ""
+"Important: Do not use hyphens (-). Order parameter (i.e. -asc or -desc) will "
+"be added automatically."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-sorting.php:26
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-sorting.php:40
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-sorting.php:46
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:39
+msgid "Custom Sorting"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-sorting.php:41
+msgid ""
+"Text to show on frontend. Fill option with some value to enable. Set option "
+"blank to disable."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-sorting.php:66
+msgid "Sort SKUs as numbers instead of as text"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-sorting.php:72
+#: includes/admin/class-alg-wc-more-sorting-settings-remove-sorting.php:51
+#, php-format
+msgid "You will need %s plugin to enable this option."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-sorting.php:74
+#: includes/admin/class-alg-wc-more-sorting-settings-default-wc-sorting.php:53
+#: includes/admin/class-alg-wc-more-sorting-settings-remove-sorting.php:53
+#: includes/admin/class-alg-wc-more-sorting-settings-remove-sorting.php:87
+msgid "More Sorting Options for WooCommerce Pro"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-default-wc-sorting.php:26
+#: includes/admin/class-alg-wc-more-sorting-settings-default-wc-sorting.php:39
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:51
+msgid "Default WooCommerce Sorting"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-default-wc-sorting.php:44
+msgid "Default Sorting Options"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-default-wc-sorting.php:51
+#: includes/admin/class-alg-wc-more-sorting-settings-remove-sorting.php:85
+#, php-format
+msgid "You will need %s plugin to enable this section."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-default-wc-sorting.php:72
+msgid "Remove"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:25
+msgid "General"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:40
+msgid ""
+"Custom sorting options: sort by title, sort by SKU, sort by stock quantity "
+"and more."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:46
+msgid "Sorting by custom meta fields."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:52
+msgid "Customize default WooCommerce sorting options."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:57
+#: includes/admin/class-alg-wc-more-sorting-settings-rearrange-sorting.php:26
+#: includes/admin/class-alg-wc-more-sorting-settings-rearrange-sorting.php:62
+#: includes/admin/class-alg-wc-more-sorting-settings-rearrange-sorting.php:67
+#: includes/admin/class-alg-wc-more-sorting-settings-rearrange-sorting.php:74
+msgid "Rearrange Sorting"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:58
+msgid "Rearrange sorting order on frontend."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:63
+#: includes/admin/class-alg-wc-more-sorting-settings-remove-sorting.php:26
+#: includes/admin/class-alg-wc-more-sorting-settings-remove-sorting.php:73
+msgid "Remove Sorting"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:64
+msgid "Remove all sorting (including WooCommerce default)."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:70
+msgid "Restore default WooCommerce sorting."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:87
+msgid "Section"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:88
+msgid "Description"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:89
+msgid "Status"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:101
+msgid "Disabled"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:105
+msgid "Dashboard"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:117
+msgid "More Sorting Options"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:122
+msgid "More Sorting for WooCommerce"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:123
+msgid "Enable Plugin"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:124
+msgid ""
+"Add new custom, rearrange, remove or rename WooCommerce sorting options."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-rearrange-sorting.php:49
+msgid "Available Values in Default Order"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-remove-sorting.php:44
+msgid "More Sorting: Remove All Sorting"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-remove-sorting.php:45
+msgid "Completely remove sorting from the shop front end"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-remove-sorting.php:78
+msgid "Remove All Sorting (Including WooCommerce Default)"
+msgstr ""
+
+#: includes/admin/class-alg-wc-settings-more-sorting.php:26
+msgid "More Sorting"
+msgstr ""
+
+#: includes/admin/class-alg-wc-settings-more-sorting.php:43
+msgid "Reset Section Settings"
+msgstr ""
+
+#: includes/admin/class-alg-wc-settings-more-sorting.php:48
+msgid "Reset Settings"
+msgstr ""
+
+#: includes/admin/class-alg-wc-settings-more-sorting.php:49
+msgid "Reset"
+msgstr ""
