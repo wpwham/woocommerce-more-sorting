@@ -2,6 +2,9 @@
 	"name": "algoritmika/woocommerce-more-sorting",
 	"description": "Add new custom, rearrange, remove or rename WooCommerce sorting options.",	
 	"type": "wordpress-plugin",	
+	"config": {
+		"preferred-install": "dist"
+	},
 	"extra": {
 		"installer-paths": {
 			"vendor/{$vendor}/{$name}": [
