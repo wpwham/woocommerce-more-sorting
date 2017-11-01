@@ -47,7 +47,9 @@ if ( ! alg_is_plugin_active( 'woocommerce.php' ) ) {
 
 // Disables free version if PRO is enabled
 register_activation_hook( __FILE__, function () {	
-	die(sprintf(__('<strong>%1$s</strong> could not be enabled as <a href="%2$s" target="blank">Premium version</a> is enabled','woocommerce-more-sorting'),__('More Sorting Options for WooCommerce','woocommerce-more-sorting'),'https://wpcodefactory.com/item/more-sorting-options-for-woocommerce-wordpress-plugin/'));	
+	if ( 'woocommerce-more-sorting.php' === basename( __FILE__ ) && alg_is_plugin_active( 'woocommerce-more-sorting-pro.php' ) ) {		
+		die(sprintf(__('<strong>%1$s</strong> could not be enabled as <a href="%2$s" target="blank">Premium version</a> is enabled','woocommerce-more-sorting'),__('More Sorting Options for WooCommerce','woocommerce-more-sorting'),'https://wpcodefactory.com/item/more-sorting-options-for-woocommerce-wordpress-plugin/'));	
+	}
 } );
 
 if ( ! class_exists( 'Alg_Woocommerce_More_Sorting' ) ) :
