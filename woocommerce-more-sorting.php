@@ -46,7 +46,7 @@ if ( ! alg_is_plugin_active( 'woocommerce.php' ) ) {
 }
 
 if ( 'woocommerce-more-sorting.php' === basename( __FILE__ ) && alg_is_plugin_active( 'woocommerce-more-sorting-pro.php' ) ) {
-	return;
+	\deactivate_plugins( 'woocommerce-more-sorting/woocommerce-more-sorting.php' );
 }
 
 if ( ! class_exists( 'Alg_Woocommerce_More_Sorting' ) ) :
