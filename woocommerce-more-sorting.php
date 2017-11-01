@@ -58,7 +58,7 @@ if ( ! class_exists( 'Alg_Woocommerce_More_Sorting' ) ) :
  * Main Alg_Woocommerce_More_Sorting Class
  *
  * @class   Alg_Woocommerce_More_Sorting
- * @version 3.1.2
+ * @version 3.1.3
  * @since   1.0.0
  */
 final class Alg_Woocommerce_More_Sorting {
