@@ -72,6 +72,7 @@ Yes, You can set added sorting options work as default - just go to "WooCommerce
 
 = 3.1.3 - 01/11/2017 =
 * Add sorting by date - descending
+* Add composer to handle dependencies
 
 = 3.1.2 - 21/10/2017 =
 * Dev - WooCommerce v3.2.0 compatibility - Admin settings `select` type fixed.
