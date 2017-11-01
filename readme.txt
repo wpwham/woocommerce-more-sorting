@@ -3,7 +3,7 @@ Contributors: algoritmika, anbinder
 Tags: woocommerce, sorting
 Requires at least: 4.4
 Tested up to: 4.8
-Stable tag: 3.1.2
+Stable tag: 3.1.3
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -69,6 +69,9 @@ Yes, You can set added sorting options work as default - just go to "WooCommerce
 1. Admin options.
 
 == Changelog ==
+
+= 3.1.3 - 01/11/2017 =
+* Add sorting by date - descending
 
 = 3.1.2 - 21/10/2017 =
 * Dev - WooCommerce v3.2.0 compatibility - Admin settings `select` type fixed.
@@ -145,5 +148,5 @@ Yes, You can set added sorting options work as default - just go to "WooCommerce
 
 == Upgrade Notice ==
 
-= 1.0.0 =
-This is the first release of the plugin.
+= 3.1.3 =
+* Add sorting by date - descending

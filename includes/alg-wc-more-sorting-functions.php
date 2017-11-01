@@ -2,7 +2,7 @@
 /**
  * WooCommerce More Sorting Functions
  *
- * @version 3.1.0
+ * @version 3.1.3
  * @since   3.0.0
  * @author  Algoritmika Ltd.
  */
@@ -66,12 +66,13 @@ if ( ! function_exists( 'alg_wc_more_sorting_get_custom_sorting_options' ) ) {
 	/**
 	 * alg_wc_more_sorting_get_custom_sorting_options.
 	 *
-	 * @version 3.1.0
+	 * @version 3.1.3
 	 * @since   3.1.0
 	 */
 	function alg_wc_more_sorting_get_custom_sorting_options() {
 		return array(
 			'date-asc'            => __( 'Sort by date', 'woocommerce-more-sorting' ) . ' (' . __( 'ascending', 'woocommerce-more-sorting' ) . ')',
+			'date-desc'           => __( 'Sort by date', 'woocommerce-more-sorting' ) . ' (' . __( 'descending', 'woocommerce-more-sorting' ) . ')',
 			'title-asc'           => __( 'Sort by title', 'woocommerce-more-sorting' ) . ': ' . __( 'A to Z', 'woocommerce-more-sorting' ),
 			'title-desc'          => __( 'Sort by title', 'woocommerce-more-sorting' ) . ': ' . __( 'Z to A', 'woocommerce-more-sorting' ),
 			'name-asc'            => __( 'Sort by slug', 'woocommerce-more-sorting' ) . ': ' . __( 'A to Z', 'woocommerce-more-sorting' ),
