@@ -70,7 +70,7 @@ Yes, You can set added sorting options work as default - just go to "WooCommerce
 
 == Changelog ==
 
-= 3.1.3 - 01/11/2017 =
+= 3.1.3 - 23/01/2018 =
 * Add sorting by date - descending
 * Add composer to handle dependencies
 
