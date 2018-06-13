@@ -2,7 +2,7 @@
 /**
  * WooCommerce More Sorting Functions
  *
- * @version 3.1.3
+ * @version 3.1.4
  * @since   3.0.0
  * @author  Algoritmika Ltd.
  */
@@ -66,7 +66,7 @@ if ( ! function_exists( 'alg_wc_more_sorting_get_custom_sorting_options' ) ) {
 	/**
 	 * alg_wc_more_sorting_get_custom_sorting_options.
 	 *
-	 * @version 3.1.3
+	 * @version 3.1.4
 	 * @since   3.1.0
 	 */
 	function alg_wc_more_sorting_get_custom_sorting_options() {
