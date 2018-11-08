@@ -3,7 +3,7 @@ Contributors: algoritmika, anbinder, karzin
 Tags: woocommerce, sorting
 Requires at least: 4.4
 Tested up to: 4.9
-Stable tag: 3.1.4
+Stable tag: 3.1.5
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -69,6 +69,10 @@ Yes, You can set added sorting options work as default - just go to "WooCommerce
 1. Admin options.
 
 == Changelog ==
+
+= 3.1.5 - 08/11/2018 =
+* Improve compatibility with avada theme by removing 'woocommerce_get_catalog_ordering_args' filter from $avada_woocommerce object
+* Improve compatibility with avada fixing 'catalog-ordering' div position by removing content from :before on CSS
 
 = 3.1.4 - 24/08/2018 =
 * Add 'alg_wcmso_sorting_options' filter to change custom sorting filters
@@ -155,8 +159,6 @@ Yes, You can set added sorting options work as default - just go to "WooCommerce
 
 == Upgrade Notice ==
 
-= 3.1.4 =
-* Add 'alg_wcmso_sorting_options' filter to change custom sorting filters
-* Update tested up to
-* Add karzin as contributor
-* Add WooCommerce requirements
+= 3.1.5 =
+* Improve compatibility with avada theme by removing 'woocommerce_get_catalog_ordering_args' filter from $avada_woocommerce object
+* Improve compatibility with avada fixing 'catalog-ordering' div position by removing content from :before on CSS

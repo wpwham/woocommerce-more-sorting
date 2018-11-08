@@ -3,7 +3,7 @@
 Plugin Name: More Sorting Options for WooCommerce
 Plugin URI: https://wpcodefactory.com/item/more-sorting-options-for-woocommerce-wordpress-plugin/
 Description: Add new custom, rearrange, remove or rename WooCommerce sorting options.
-Version: 3.1.4
+Version: 3.1.5
 Author: Algoritmika Ltd
 Author URI: http://www.algoritmika.com
 Text Domain: woocommerce-more-sorting

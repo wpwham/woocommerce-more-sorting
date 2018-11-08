@@ -2,7 +2,7 @@
 /**
  * WooCommerce More Sorting - Restore Default
  *
- * @version 3.1.1
+ * @version 3.1.5
  * @since   3.1.0
  * @author  Algoritmika Ltd.
  */
@@ -23,13 +23,14 @@ class WC_Alg_More_Sorting_Restore_Default {
 	 */
 	function __construct() {
 		add_action( 'init',    array( $this, 'restore_default_woocommerce_sorting' ),       PHP_INT_MAX );
+		//add_action( 'after_setup_theme',    array( $this, 'restore_default_woocommerce_sorting' ),       PHP_INT_MAX );
 		add_action( 'wp_head', array( $this, 'restore_default_woocommerce_sorting_style' ), PHP_INT_MAX );
 	}
 
 	/**
 	 * restore_default_woocommerce_sorting_style.
 	 *
-	 * @version 3.1.0
+	 * @version 3.1.5
 	 * @since   3.1.0
 	 */
 	function restore_default_woocommerce_sorting_style() {
@@ -57,6 +58,9 @@ class WC_Alg_More_Sorting_Restore_Default {
 					}
 					div.catalog-ordering {
 						display: inline !important;
+					}
+					.catalog-ordering:before{
+						content:none !important;
 					}
 				</style>';
 				break;
@@ -102,7 +106,7 @@ class WC_Alg_More_Sorting_Restore_Default {
 	/**
 	 * restore_default_woocommerce_sorting.
 	 *
-	 * @version 3.1.1
+	 * @version 3.1.5
 	 * @since   3.1.0
 	 * @todo    (maybe) try to integrate in custom Avada, Revo etc. sorting (instead of restoring default)
 	 */
@@ -113,30 +117,34 @@ class WC_Alg_More_Sorting_Restore_Default {
 				// Avada theme
 				add_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 29 );
 				remove_action( 'woocommerce_get_catalog_ordering_args', 'avada_woocommerce_get_catalog_ordering_args', 20 );
-				break;
+				add_action( 'pre_get_posts', function () {
+					global $avada_woocommerce;
+					remove_filter( 'woocommerce_get_catalog_ordering_args', array( $avada_woocommerce, 'get_catalog_ordering_args' ), 20 );
+				}, 6 );
+			break;
 			case 'avada_no_css':
 				// Avada theme (no CSS)
 				add_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
-				remove_action( 'woocommerce_before_shop_loop',          'avada_woocommerce_catalog_ordering', 30 );
+				remove_action( 'woocommerce_before_shop_loop', 'avada_woocommerce_catalog_ordering', 30 );
 				remove_action( 'woocommerce_get_catalog_ordering_args', 'avada_woocommerce_get_catalog_ordering_args', 20 );
-				break;
+			break;
 			case 'revo':
 				// Revo theme
 				add_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 29 );
-				add_action( 'woocommerce_after_shop_loop',  'woocommerce_catalog_ordering', 6 );
-				break;
+				add_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 6 );
+			break;
 			case 'revo_no_css':
 				// Revo theme (no CSS)
 				add_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
-				add_action( 'woocommerce_after_shop_loop',  'woocommerce_catalog_ordering', 7 );
-				remove_action( 'woocommerce_before_shop_loop',          'revo_woocommerce_catalog_ordering', 30 );
-				remove_action( 'woocommerce_after_shop_loop',           'revo_woocommerce_catalog_ordering', 7 );
-				remove_action( 'woocommerce_get_catalog_ordering_args', 'revo_woocommerce_get_catalog_ordering_args', 20);
-				break;
+				add_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 7 );
+				remove_action( 'woocommerce_before_shop_loop', 'revo_woocommerce_catalog_ordering', 30 );
+				remove_action( 'woocommerce_after_shop_loop', 'revo_woocommerce_catalog_ordering', 7 );
+				remove_action( 'woocommerce_get_catalog_ordering_args', 'revo_woocommerce_get_catalog_ordering_args', 20 );
+			break;
 			default: // case 'other':
 				// Unknown theme
 				add_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
-				break;
+			break;
 		}
 	}
 
