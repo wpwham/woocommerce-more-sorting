@@ -94,7 +94,7 @@ class Alg_WC_More_Sorting_Settings_Custom_Meta_Sorting extends Alg_WC_More_Sorti
 				'default'   => 1,
 				'type'      => 'alg_wc_more_sorting_custom_number',
 				'custom_attributes' => apply_filters( 'alg_wc_more_sorting', array( 'min' => '0', 'max' => '1' ), 'settings_custom_meta_sorting' ),
-				'desc'      => apply_filters( 'alg_wc_more_sorting', sprintf( __( 'You will need <a target="_blank" href="%s">More Sorting Options for WooCommerce Pro</a> plugin to add more than one custom meta sorting.', 'woocommerce-more-sorting' ), 'https://wpcodefactory.com/item/more-sorting-options-for-woocommerce-wordpress-plugin/' ), 'settings' ),
+				'desc'      => apply_filters( 'alg_wc_more_sorting', sprintf( __( 'You will need <a target="_blank" href="%s">More Sorting Options for WooCommerce Pro</a> plugin to add more than one custom meta sorting.', 'woocommerce-more-sorting' ), 'https://wpwham.com/products/more-sorting-options-for-woocommerce/' ), 'settings' ),
 			),
 			array(
 				'type'      => 'sectionend',

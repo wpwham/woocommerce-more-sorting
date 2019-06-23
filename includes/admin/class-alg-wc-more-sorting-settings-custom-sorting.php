@@ -70,7 +70,7 @@ class Alg_WC_More_Sorting_Settings_Custom_Sorting extends Alg_WC_More_Sorting_Se
 					'custom_attributes' => apply_filters( 'alg_wc_more_sorting', array( 'disabled' => 'disabled' ), 'settings' ),
 					'desc_tip'  => apply_filters( 'alg_wc_more_sorting',
 						sprintf( __( 'You will need %s plugin to enable this option.', 'woocommerce-more-sorting' ),
-							'<a target="_blank" href="https://wpcodefactory.com/item/more-sorting-options-for-woocommerce-wordpress-plugin/">' .
+							'<a target="_blank" href="https://wpwham.com/products/more-sorting-options-for-woocommerce/">' .
 								__( 'More Sorting Options for WooCommerce Pro', 'woocommerce-more-sorting' ) . '</a>'
 						),
 						'settings'

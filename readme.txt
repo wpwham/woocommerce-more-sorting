@@ -1,8 +1,8 @@
 === More Sorting Options for WooCommerce ===
-Contributors: algoritmika, anbinder, karzin, wpwham
+Contributors: wpwham
 Tags: woocommerce, sorting
 Requires at least: 4.4
-Tested up to: 4.9
+Tested up to: 5.2
 Stable tag: 3.1.5
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -43,10 +43,10 @@ Premium version also allows to **rename or completely remove** default WooCommer
 
 = Feedback =
 * We are open to your suggestions and feedback. Thank you for using or trying out one of our plugins!
-* Drop us a line at http://www.algoritmika.com.
+* Drop us a line at [https://wpwham.com/](https://wpwham.com/).
 
 = More =
-* Visit [More Sorting Options for WooCommerce](https://wpcodefactory.com/item/more-sorting-options-for-woocommerce-wordpress-plugin/) plugin page.
+* Visit [More Sorting Options for WooCommerce](https://wpwham.com/products/more-sorting-options-for-woocommerce/) plugin page.
 
 == Installation ==
 

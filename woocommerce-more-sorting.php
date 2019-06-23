@@ -1,18 +1,18 @@
 <?php
 /*
 Plugin Name: More Sorting Options for WooCommerce
-Plugin URI: https://wpcodefactory.com/item/more-sorting-options-for-woocommerce-wordpress-plugin/
+Plugin URI: https://wpwham.com/products/more-sorting-options-for-woocommerce/
 Description: Add new custom, rearrange, remove or rename WooCommerce sorting options.
 Version: 3.1.5
-Author: Algoritmika Ltd
-Author URI: http://www.algoritmika.com
+Author: WP Wham
+Author URI: https://wpwham.com
 Text Domain: woocommerce-more-sorting
 Domain Path: /langs
-Copyright: © 2017 Algoritmika Ltd.
+Copyright: © 2018-2019 WP Wham
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 WC requires at least: 3.0.0
-WC tested up to: 3.4
+WC tested up to: 3.6
 */
 
 // Exit if accessed directly
@@ -50,7 +50,7 @@ if ( ! alg_is_plugin_active( 'woocommerce.php' ) ) {
 // Disables free version if PRO is enabled
 register_activation_hook( __FILE__, function () {	
 	if ( 'woocommerce-more-sorting.php' === basename( __FILE__ ) && alg_is_plugin_active( 'woocommerce-more-sorting-pro.php' ) ) {		
-		die(sprintf(__('<strong>%1$s</strong> could not be enabled as <a href="%2$s" target="blank">Premium version</a> is enabled','woocommerce-more-sorting'),__('More Sorting Options for WooCommerce','woocommerce-more-sorting'),'https://wpcodefactory.com/item/more-sorting-options-for-woocommerce-wordpress-plugin/'));	
+		die(sprintf(__('<strong>%1$s</strong> could not be enabled as <a href="%2$s" target="blank">Premium version</a> is enabled','woocommerce-more-sorting'),__('More Sorting Options for WooCommerce','woocommerce-more-sorting'),'https://wpwham.com/products/more-sorting-options-for-woocommerce/'));	
 	}
 } );
 
@@ -122,7 +122,7 @@ final class Alg_Woocommerce_More_Sorting {
 		$custom_links = array();
 		$custom_links[] = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=alg_more_sorting' ) . '">' . __( 'Settings', 'woocommerce' ) . '</a>';
 		if ( 'woocommerce-more-sorting.php' === basename( __FILE__ ) ) {
-			$custom_links[] = '<a href="https://wpcodefactory.com/item/more-sorting-options-for-woocommerce-wordpress-plugin/">' .
+			$custom_links[] = '<a href="https://wpwham.com/products/more-sorting-options-for-woocommerce/">' .
 				__( 'Unlock all', 'woocommerce-more-sorting' ) . '</a>';
 		}
 		return array_merge( $custom_links, $links );
