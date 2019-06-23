@@ -1,146 +1,24 @@
-#: woocommerce-more-sorting.php:118
-#: includes/admin/class-alg-wc-more-sorting-settings-general.php:97
-msgid "Settings"
+#, fuzzy
+msgid ""
 msgstr ""
-
-#: woocommerce-more-sorting.php:121
-msgid "Unlock all"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:21
-msgid "Default sorting"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:22
-msgid "Sort by popularity"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:23
-msgid "Sort by average rating"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:24
-msgid "Sort by newness"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:25
-msgid "Sort by price: low to high"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:26
-msgid "Sort by price: high to low"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:47
-#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:26
-#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:79
-#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:84
-#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:108
-#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:179
-#: includes/admin/class-alg-wc-more-sorting-settings-general.php:45
-msgid "Custom Meta Sorting"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:74
-msgid "Sort by date"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:74
-#: includes/alg-wc-more-sorting-functions.php:87
-#: includes/alg-wc-more-sorting-functions.php:89
-#: includes/alg-wc-more-sorting-functions.php:91
-msgid "ascending"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:75
-#: includes/alg-wc-more-sorting-functions.php:76
-msgid "Sort by title"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:75
-#: includes/alg-wc-more-sorting-functions.php:77
-msgid "A to Z"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:76
-#: includes/alg-wc-more-sorting-functions.php:78
-msgid "Z to A"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:77
-#: includes/alg-wc-more-sorting-functions.php:78
-msgid "Sort by slug"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:79
-#: includes/alg-wc-more-sorting-functions.php:80
-#: includes/admin/class-alg-wc-more-sorting-settings-custom-sorting.php:65
-msgid "Sort by SKU"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:79
-#: includes/alg-wc-more-sorting-functions.php:81
-#: includes/alg-wc-more-sorting-functions.php:83
-msgid "low to high"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:80
-#: includes/alg-wc-more-sorting-functions.php:82
-#: includes/alg-wc-more-sorting-functions.php:84
-msgid "high to low"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:81
-#: includes/alg-wc-more-sorting-functions.php:82
-msgid "Sort by stock quantity"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:83
-#: includes/alg-wc-more-sorting-functions.php:84
-msgid "Sort by total sales"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:85
-#: includes/alg-wc-more-sorting-functions.php:86
-msgid "Sort by last modified date"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:85
-msgid "oldest to newest"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:86
-msgid "newest to oldest"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:87
-#: includes/alg-wc-more-sorting-functions.php:88
-msgid "Sort by author ID"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:88
-#: includes/alg-wc-more-sorting-functions.php:90
-#: includes/alg-wc-more-sorting-functions.php:92
-msgid "descending"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:89
-#: includes/alg-wc-more-sorting-functions.php:90
-msgid "Sort by product ID"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:91
-#: includes/alg-wc-more-sorting-functions.php:92
-msgid "Sort by number of comments"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:93
-msgid "Random sorting"
-msgstr ""
-
-#: includes/alg-wc-more-sorting-functions.php:94
-msgid "No sorting"
-msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: More Sorting Options for WooCommerce\n"
+"POT-Creation-Date: 2019-06-22 17:20-0700\n"
+"PO-Revision-Date: 2019-06-22 17:19-0700\n"
+"Last-Translator: \n"
+"Language-Team: WP Wham <support@wpwham.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: woocommerce-more-sorting.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: includes/admin/class-alg-wc-more-sorting-settings-advanced.php:26
 #: includes/admin/class-alg-wc-more-sorting-settings-general.php:69
@@ -194,6 +72,16 @@ msgstr ""
 
 #: includes/admin/class-alg-wc-more-sorting-settings-advanced.php:61
 msgid "Other"
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:26
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:79
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:84
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:108
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:179
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:45
+#: includes/alg-wc-more-sorting-functions.php:47
+msgid "Custom Meta Sorting"
 msgstr ""
 
 #: includes/admin/class-alg-wc-more-sorting-settings-custom-meta-sorting.php:43
@@ -320,6 +208,12 @@ msgid ""
 "blank to disable."
 msgstr ""
 
+#: includes/admin/class-alg-wc-more-sorting-settings-custom-sorting.php:65
+#: includes/alg-wc-more-sorting-functions.php:80
+#: includes/alg-wc-more-sorting-functions.php:81
+msgid "Sort by SKU"
+msgstr ""
+
 #: includes/admin/class-alg-wc-more-sorting-settings-custom-sorting.php:66
 msgid "Sort SKUs as numbers instead of as text"
 msgstr ""
@@ -413,6 +307,11 @@ msgstr ""
 msgid "Status"
 msgstr ""
 
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:97
+#: woocommerce-more-sorting.php:123
+msgid "Settings"
+msgstr ""
+
 #: includes/admin/class-alg-wc-more-sorting-settings-general.php:101
 msgid "Disabled"
 msgstr ""
@@ -433,6 +332,7 @@ msgstr ""
 msgid "Enable Plugin"
 msgstr ""
 
+#. Description of the plugin/theme
 #: includes/admin/class-alg-wc-more-sorting-settings-general.php:124
 msgid ""
 "Add new custom, rearrange, remove or rename WooCommerce sorting options."
@@ -468,4 +368,153 @@ msgstr ""
 
 #: includes/admin/class-alg-wc-settings-more-sorting.php:49
 msgid "Reset"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:21
+msgid "Default sorting"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:22
+msgid "Sort by popularity"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:23
+msgid "Sort by average rating"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:24
+msgid "Sort by newness"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:25
+msgid "Sort by price: low to high"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:26
+msgid "Sort by price: high to low"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:74
+#: includes/alg-wc-more-sorting-functions.php:75
+msgid "Sort by date"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:74
+#: includes/alg-wc-more-sorting-functions.php:88
+#: includes/alg-wc-more-sorting-functions.php:90
+#: includes/alg-wc-more-sorting-functions.php:92
+msgid "ascending"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:75
+#: includes/alg-wc-more-sorting-functions.php:89
+#: includes/alg-wc-more-sorting-functions.php:91
+#: includes/alg-wc-more-sorting-functions.php:93
+msgid "descending"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:76
+#: includes/alg-wc-more-sorting-functions.php:77
+msgid "Sort by title"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:76
+#: includes/alg-wc-more-sorting-functions.php:78
+msgid "A to Z"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:77
+#: includes/alg-wc-more-sorting-functions.php:79
+msgid "Z to A"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:78
+#: includes/alg-wc-more-sorting-functions.php:79
+msgid "Sort by slug"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:80
+#: includes/alg-wc-more-sorting-functions.php:82
+#: includes/alg-wc-more-sorting-functions.php:84
+msgid "low to high"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:81
+#: includes/alg-wc-more-sorting-functions.php:83
+#: includes/alg-wc-more-sorting-functions.php:85
+msgid "high to low"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:82
+#: includes/alg-wc-more-sorting-functions.php:83
+msgid "Sort by stock quantity"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:84
+#: includes/alg-wc-more-sorting-functions.php:85
+msgid "Sort by total sales"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:86
+#: includes/alg-wc-more-sorting-functions.php:87
+msgid "Sort by last modified date"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:86
+msgid "oldest to newest"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:87
+msgid "newest to oldest"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:88
+#: includes/alg-wc-more-sorting-functions.php:89
+msgid "Sort by author ID"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:90
+#: includes/alg-wc-more-sorting-functions.php:91
+msgid "Sort by product ID"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:92
+#: includes/alg-wc-more-sorting-functions.php:93
+msgid "Sort by number of comments"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:94
+msgid "Random sorting"
+msgstr ""
+
+#: includes/alg-wc-more-sorting-functions.php:95
+msgid "No sorting"
+msgstr ""
+
+#: woocommerce-more-sorting.php:53
+#, php-format
+msgid ""
+"<strong>%1$s</strong> could not be enabled as <a href=\"%2$s\" target=\"blank"
+"\">Premium version</a> is enabled"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: woocommerce-more-sorting.php:53
+msgid "More Sorting Options for WooCommerce"
+msgstr ""
+
+#: woocommerce-more-sorting.php:126
+msgid "Unlock all"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wpwham.com/products/more-sorting-options-for-woocommerce/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WP Wham"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wpwham.com"
 msgstr ""
