@@ -3,7 +3,7 @@ Contributors: wpwham
 Tags: woocommerce, sorting
 Requires at least: 4.4
 Tested up to: 5.2
-Stable tag: 3.1.5
+Stable tag: 3.2.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -70,33 +70,36 @@ Yes, You can set added sorting options work as default - just go to "WooCommerce
 
 == Changelog ==
 
-= 3.1.5 - 08/11/2018 =
+= 3.2.0 - 2019-06-22 =
+* UPDATE: updated .pot file for translations
+
+= 3.1.5 - 2018-11-08 =
 * Improve compatibility with avada theme by removing 'woocommerce_get_catalog_ordering_args' filter from $avada_woocommerce object
 * Improve compatibility with avada fixing 'catalog-ordering' div position by removing content from :before on CSS
 
-= 3.1.4 - 24/08/2018 =
+= 3.1.4 - 2018-08-24 =
 * Add 'alg_wcmso_sorting_options' filter to change custom sorting filters
 * Update tested up to
 * Add karzin as contributor
 * Add WooCommerce requirements
 
-= 3.1.3 - 23/01/2018 =
+= 3.1.3 - 2018-01-23 =
 * Add sorting by date - descending
 * Add composer to handle dependencies
 
-= 3.1.2 - 21/10/2017 =
+= 3.1.2 - 2017-10-21 =
 * Dev - WooCommerce v3.2.0 compatibility - Admin settings `select` type fixed.
 * Dev - "Remove All Sorting" now only removes sorting from frontend and leaves it enabled in backend (so e.g. default product sorting can be set to some custom sorting).
 * Dev - Savings setting array as main class property.
 * Dev - Code refactoring.
 
-= 3.1.1 - 23/07/2017 =
+= 3.1.1 - 2017-07-23 =
 * Dev - WooCommerce v3.0.0 compatibility - `woocommerce_clean()` replaced with `wc_clean()`.
 * Dev - Advanced - Restore default WooCommerce Sorting - `remove_action` added to `avada` option.
 * Dev - Plugin header ("Text Domain") updated.
 * Dev - Link updated from http://coder.fm to https://wpcodefactory.com.
 
-= 3.1.0 - 08/03/2017 =
+= 3.1.0 - 2017-03-08 =
 * Dev - "Custom Meta Sorting" section added.
 * Dev - Custom Sorting - "No sorting" option added.
 * Dev - Custom Sorting - "Random sorting" option added.
@@ -113,13 +116,13 @@ Yes, You can set added sorting options work as default - just go to "WooCommerce
 * Dev - "Reset settings" checkbox added.
 * Dev - Code refactoring: separate `order` param added (e.g. `sku_asc` replaced with `sku-asc`); `title` removed as it already exists in WooCommerce default function.
 
-= 3.0.2 - 19/12/2016 =
+= 3.0.2 - 2016-12-19 =
 * Fix - Multisite WooCommerce check fixed.
 
-= 3.0.1 - 15/12/2016 =
+= 3.0.1 - 2016-12-15 =
 * Fix - `handle_deprecated_options()` fixed. This produced notice on plugin activation.
 
-= 3.0.0 - 13/12/2016 =
+= 3.0.0 - 2016-12-13 =
 * Fix - `load_plugin_textdomain()` moved from `init` hook to constructor.
 * Dev - Remove All Sorting - Empty `loop/orderby.php` template added to ensure maximum compatibility;
 * Dev - Remove All Sorting - Storefront theme compatibility added.
@@ -129,7 +132,7 @@ Yes, You can set added sorting options work as default - just go to "WooCommerce
 * Dev - Code refactoring. "Custom Sorting" - "Enable Section" checkbox added. Functions renamed etc.
 * Tweak - Plugin renamed.
 
-= 2.1.0 - 08/10/2016 =
+= 2.1.0 - 2016-10-08 =
 * Dev - Version variable added.
 * Dev - Multisite support added.
 * Fix - Coder.fm link fixed.
@@ -138,10 +141,10 @@ Yes, You can set added sorting options work as default - just go to "WooCommerce
 * Tweak - Readme.txt header updated.
 * Tweak - Language (POT) file added.
 
-= 2.0.1 - 27/08/2015 =
+= 2.0.1 - 2015-08-27 =
 * Dev - Remove All Sorting - Blaszok theme compatibility added.
 
-= 2.0.0 - 29/07/2015 =
+= 2.0.0 - 2015-07-29 =
 * Dev - Option to treat SKUs as numbers or texts when sorting, added.
 * Dev - Sorting by stock quantity - added.
 * Dev - Major code refactoring. Settings are moved to "WooCommerce > Settings > More Sorting Pro".
@@ -156,9 +159,3 @@ Yes, You can set added sorting options work as default - just go to "WooCommerce
 
 = 1.0.0 =
 * Initial Release
-
-== Upgrade Notice ==
-
-= 3.1.5 =
-* Improve compatibility with avada theme by removing 'woocommerce_get_catalog_ordering_args' filter from $avada_woocommerce object
-* Improve compatibility with avada fixing 'catalog-ordering' div position by removing content from :before on CSS
