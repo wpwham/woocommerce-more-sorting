@@ -25,6 +25,18 @@ class Alg_WC_Settings_More_Sorting extends WC_Settings_Page {
 		$this->id    = 'alg_more_sorting';
 		$this->label = __( 'More Sorting', 'woocommerce-more-sorting' );
 		parent::__construct();
+		add_action( 'admin_notices', array( $this, 'settings_saved_admin_notice' ) );
+	}
+
+	/**
+	 * settings_saved_admin_notice.
+	 *
+	 * @since   3.2.0
+	 */
+	function settings_saved_admin_notice() {
+		if ( ! empty( $_GET['alg_wc_more_sorting_settings_saved'] ) ) {
+			WC_Admin_Settings::add_message( __( 'Your settings have been saved.', 'woocommerce' ) );
+		}
 	}
 
 	/**
@@ -103,6 +115,8 @@ class Alg_WC_Settings_More_Sorting extends WC_Settings_Page {
 	function save() {
 		parent::save();
 		$this->maybe_reset_settings();
+		wp_safe_redirect( add_query_arg( 'alg_wc_more_sorting_settings_saved', true ) );
+		exit;
 	}
 }
 
