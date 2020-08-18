@@ -77,6 +77,7 @@ class Alg_WC_More_Sorting_Settings_Custom_Meta_Sorting extends Alg_WC_More_Sorti
 		$settings = array(
 			array(
 				'title'     => __( 'Custom Meta Sorting', 'woocommerce-more-sorting' ),
+				'desc'      => __( 'This section allows you to add sorting by any custom product meta.', 'woocommerce-more-sorting' ),
 				'type'      => 'title',
 				'id'        => 'alg_wc_more_sorting_custom_meta_sorting_options',
 			),

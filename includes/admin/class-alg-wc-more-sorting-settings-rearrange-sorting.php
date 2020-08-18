@@ -60,6 +60,7 @@ class Alg_WC_More_Sorting_Settings_Rearrange_Sorting extends Alg_WC_More_Sorting
 		$settings = array(
 			array(
 				'title'     => __( 'Rearrange Sorting', 'woocommerce-more-sorting' ),
+				'desc'      => __( 'If you want to change the order of sorting options on frontend (in drop down box), you can do that in this section.', 'woocommerce-more-sorting' ),
 				'type'      => 'title',
 				'id'        => 'alg_wc_more_sorting_rearrange_options',
 			),

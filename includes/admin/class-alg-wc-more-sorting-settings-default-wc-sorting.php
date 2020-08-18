@@ -37,6 +37,7 @@ class Alg_WC_More_Sorting_Settings_Default_WC_Sorting extends Alg_WC_More_Sortin
 		$settings = array(
 			array(
 				'title'     => __( 'Default WooCommerce Sorting', 'woocommerce-more-sorting' ),
+				'desc'      => __( 'In this section you can rename or remove any of WooCommerce default sorting options.', 'woocommerce-more-sorting' ),
 				'type'      => 'title',
 				'id'        => 'alg_wc_more_sorting_default_sorting_options',
 			),
