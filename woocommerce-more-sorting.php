@@ -50,7 +50,7 @@ if ( ! alg_is_plugin_active( 'woocommerce.php' ) ) {
 // Disables free version if PRO is enabled
 register_activation_hook( __FILE__, function () {	
 	if ( 'woocommerce-more-sorting.php' === basename( __FILE__ ) && alg_is_plugin_active( 'woocommerce-more-sorting-pro.php' ) ) {		
-		die(sprintf(__('<strong>%1$s</strong> could not be enabled as <a href="%2$s" target="blank">Premium version</a> is enabled','woocommerce-more-sorting'),__('More Sorting Options for WooCommerce','woocommerce-more-sorting'),'https://wpwham.com/products/more-sorting-options-for-woocommerce/'));	
+		die(sprintf(__('<strong>%1$s</strong> could not be enabled as <a href="%2$s" target="blank">Premium version</a> is enabled','woocommerce-more-sorting'),__('More Sorting Options for WooCommerce','woocommerce-more-sorting'),'https://wpwham.com/products/more-sorting-options-for-woocommerce/?utm_source=Plugin&utm_content=double_activation&utm_campaign=Free'));	
 	}
 } );
 
@@ -122,7 +122,7 @@ final class Alg_Woocommerce_More_Sorting {
 		$custom_links = array();
 		$custom_links[] = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=alg_more_sorting' ) . '">' . __( 'Settings', 'woocommerce' ) . '</a>';
 		if ( 'woocommerce-more-sorting.php' === basename( __FILE__ ) ) {
-			$custom_links[] = '<a href="https://wpwham.com/products/more-sorting-options-for-woocommerce/">' .
+			$custom_links[] = '<a href="https://wpwham.com/products/more-sorting-options-for-woocommerce/?utm_source=Plugin&utm_content=plugins_php&utm_campaign=Free">' .
 				__( 'Unlock all', 'woocommerce-more-sorting' ) . '</a>';
 		}
 		return array_merge( $custom_links, $links );
