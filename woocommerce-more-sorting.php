@@ -116,12 +116,16 @@ final class Alg_Woocommerce_More_Sorting {
 	 *
 	 * @param   mixed $links
 	 * @return  array
-	 * @version 3.0.0
+	 * @version 3.2.5
+	 * @since   3.0.0
 	 */
 	function action_links( $links ) {
 		$custom_links = array();
 		$custom_links[] = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=alg_more_sorting' ) . '">' . __( 'Settings', 'woocommerce' ) . '</a>';
-		if ( 'woocommerce-more-sorting.php' === basename( __FILE__ ) ) {
+		if (
+			basename( __FILE__ ) === 'woocommerce-more-sorting.php' &&
+			! class_exists( 'Alg_Woocommerce_More_Sorting_Pro' )
+		) {
 			$custom_links[] = '<a href="https://wpwham.com/products/more-sorting-options-for-woocommerce/?utm_source=Plugin&utm_content=plugins_php&utm_campaign=Free">' .
 				__( 'Unlock all', 'woocommerce-more-sorting' ) . '</a>';
 		}
