@@ -111,7 +111,7 @@ class Alg_WC_More_Sorting_Settings_General extends Alg_WC_More_Sorting_Settings_
 	 *
 	 * @version 3.1.2
 	 */
-	function get_settings() {
+	public static function get_settings() {
 		$settings = array(
 			array(
 				'title'     => __( 'More Sorting Options', 'woocommerce-more-sorting' ),

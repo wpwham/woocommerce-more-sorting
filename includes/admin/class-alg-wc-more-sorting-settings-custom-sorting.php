@@ -34,7 +34,7 @@ class Alg_WC_More_Sorting_Settings_Custom_Sorting extends Alg_WC_More_Sorting_Se
 	 * @since   3.1.0
 	 * @todo    (maybe) add enable/disable checkboxes (instead of disabling by setting option blank)
 	 */
-	function get_settings() {
+	public static function get_settings() {
 		$settings = array(
 			array(
 				'title'     => __( 'Custom Sorting', 'woocommerce-more-sorting' ),

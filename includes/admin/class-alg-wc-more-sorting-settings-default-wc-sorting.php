@@ -33,7 +33,7 @@ class Alg_WC_More_Sorting_Settings_Default_WC_Sorting extends Alg_WC_More_Sortin
 	 * @version 3.1.2
 	 * @since   3.1.0
 	 */
-	function get_settings() {
+	public static function get_settings() {
 		$settings = array(
 			array(
 				'title'     => __( 'Default WooCommerce Sorting', 'woocommerce-more-sorting' ),

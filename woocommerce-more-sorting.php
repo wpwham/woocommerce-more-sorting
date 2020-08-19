@@ -108,6 +108,7 @@ final class Alg_Woocommerce_More_Sorting {
 		if ( is_admin() ) {
 			add_filter( 'woocommerce_get_settings_pages', array( $this, 'add_woocommerce_settings_tab' ) );
 			add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
+			add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
 		}
 	}
 
@@ -130,6 +131,70 @@ final class Alg_Woocommerce_More_Sorting {
 				__( 'Unlock all', 'woocommerce-more-sorting' ) . '</a>';
 		}
 		return array_merge( $custom_links, $links );
+	}
+
+	/**
+	 * add settings to WC status report
+	 *
+	 * @version 3.2.5
+	 * @since   3.2.5
+	 * @author  WP Wham
+	 */
+	public static function add_settings_to_status_report() {
+		#region add_settings_to_status_report
+		$protected_settings        = array( 'wpwham_more_sorting_license' );
+		$settings_general          = Alg_WC_More_Sorting_Settings_General::get_settings();
+		$settings_custom_sort      = Alg_WC_More_Sorting_Settings_Custom_Sorting::get_settings();
+		$settings_custom_meta_sort = Alg_WC_More_Sorting_Settings_Custom_Meta_Sorting::get_settings();
+		$settings_default_wc_sort  = Alg_WC_More_Sorting_Settings_Default_WC_Sorting::get_settings();
+		$settings_rearrange_sort   = Alg_WC_More_Sorting_Settings_Rearrange_Sorting::get_settings();
+		$settings_remove_sort      = Alg_WC_More_Sorting_Settings_Remove_Sorting::get_settings();
+		$settings_advanced         = Alg_WC_More_Sorting_Settings_Advanced::get_settings();
+		if ( class_exists( 'Alg_WCMSO_Pro_Settings_General' ) ) {
+			$settings_general = array_merge( $settings_general, Alg_WCMSO_Pro_Settings_General::get_settings( array() ) );
+		}
+		if ( class_exists( 'Alg_WCMSO_Pro_Settings_Custom_Sorting' ) ) {
+			$settings_custom_sort = array_merge( $settings_custom_sort, Alg_WCMSO_Pro_Settings_Custom_Sorting::get_settings( array() ) );
+		}
+		$settings = array_merge(
+			$settings_general, $settings_custom_sort, $settings_custom_meta_sort, $settings_default_wc_sort,
+			$settings_rearrange_sort, $settings_remove_sort, $settings_advanced
+		);
+		?>
+		<table class="wc_status_table widefat" cellspacing="0">
+			<thead>
+				<tr>
+					<th colspan="3" data-export-label="More Sorting Settings"><h2><?php esc_html_e( 'More Sorting Settings', 'woocommerce-more-sorting' ); ?></h2></th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php foreach ( $settings as $setting ): ?>
+				<?php 
+				if ( in_array( $setting['type'], array( 'title', 'sectionend' ) ) ) { 
+					continue;
+				}
+				if ( isset( $setting['title'] ) ) {
+					$title = $setting['title'];
+				} elseif ( isset( $setting['desc'] ) ) {
+					$title = $setting['desc'];
+				} else {
+					$title = $setting['id'];
+				}
+				$value = get_option( $setting['id'] ); 
+				if ( in_array( $setting['id'], $protected_settings ) ) {
+					$value = $value > '' ? '(set)' : 'not set';
+				}
+				?>
+				<tr>
+					<td data-export-label="<?php echo esc_attr( $title ); ?>"><?php esc_html_e( $title, 'woocommerce-more-sorting' ); ?>:</td>
+					<td class="help">&nbsp;</td>
+					<td><?php echo is_array( $value ) ? print_r( $value, true ) : $value; ?></td>
+				</tr>
+				<?php endforeach; ?>
+			</tbody>
+		</table>
+		<?php
+		#endregion add_settings_to_status_report
 	}
 
 	/**

@@ -56,7 +56,7 @@ class Alg_WC_More_Sorting_Settings_Rearrange_Sorting extends Alg_WC_More_Sorting
 	 * @version 3.1.2
 	 * @since   3.1.0
 	 */
-	function get_settings() {
+	public static function get_settings() {
 		$settings = array(
 			array(
 				'title'     => __( 'Rearrange Sorting', 'woocommerce-more-sorting' ),

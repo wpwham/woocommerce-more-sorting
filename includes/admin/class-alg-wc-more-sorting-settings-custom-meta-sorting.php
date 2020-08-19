@@ -73,7 +73,7 @@ class Alg_WC_More_Sorting_Settings_Custom_Meta_Sorting extends Alg_WC_More_Sorti
 	 * @version 3.1.2
 	 * @since   3.1.0
 	 */
-	function get_settings() {
+	public static function get_settings() {
 		$settings = array(
 			array(
 				'title'     => __( 'Custom Meta Sorting', 'woocommerce-more-sorting' ),
