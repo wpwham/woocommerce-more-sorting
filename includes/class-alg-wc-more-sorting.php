@@ -2,9 +2,10 @@
 /**
  * WooCommerce More Sorting
  *
- * @version 3.1.2
+ * @version 3.2.5
  * @since   2.0.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -18,7 +19,8 @@ class WC_Alg_More_Sorting {
 	/**
 	 * Constructor.
 	 *
-	 * @version 3.1.2
+	 * @version 3.2.5
+	 * @since   3.0.0
 	 */
 	function __construct() {
 

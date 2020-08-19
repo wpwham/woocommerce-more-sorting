@@ -2,9 +2,10 @@
 /**
  * WooCommerce More Sorting - Custom Meta Sorting Section Settings
  *
- * @version 3.1.2
+ * @version 3.2.5
  * @since   3.1.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -70,7 +71,7 @@ class Alg_WC_More_Sorting_Settings_Custom_Meta_Sorting extends Alg_WC_More_Sorti
 	/**
 	 * get_settings.
 	 *
-	 * @version 3.1.2
+	 * @version 3.2.5
 	 * @since   3.1.0
 	 */
 	public static function get_settings() {

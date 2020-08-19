@@ -2,9 +2,10 @@
 /**
  * WooCommerce More Sorting - Default WooCommerce Sorting Section Settings
  *
- * @version 3.1.2
+ * @version 3.2.5
  * @since   3.1.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -30,7 +31,7 @@ class Alg_WC_More_Sorting_Settings_Default_WC_Sorting extends Alg_WC_More_Sortin
 	/**
 	 * get_settings.
 	 *
-	 * @version 3.1.2
+	 * @version 3.2.5
 	 * @since   3.1.0
 	 */
 	public static function get_settings() {

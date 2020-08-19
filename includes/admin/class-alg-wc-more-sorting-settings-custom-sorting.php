@@ -2,9 +2,10 @@
 /**
  * WooCommerce More Sorting - Custom Sorting Section Settings
  *
- * @version 3.1.2
+ * @version 3.2.5
  * @since   3.1.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -30,7 +31,7 @@ class Alg_WC_More_Sorting_Settings_Custom_Sorting extends Alg_WC_More_Sorting_Se
 	/**
 	 * get_settings.
 	 *
-	 * @version 3.1.2
+	 * @version 3.2.5
 	 * @since   3.1.0
 	 * @todo    (maybe) add enable/disable checkboxes (instead of disabling by setting option blank)
 	 */
