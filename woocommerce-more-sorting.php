@@ -170,7 +170,7 @@ final class Alg_Woocommerce_More_Sorting {
 			<tbody>
 				<?php foreach ( $settings as $setting ): ?>
 				<?php 
-				if ( in_array( $setting['type'], array( 'title', 'sectionend' ) ) ) { 
+				if ( in_array( $setting['type'], array( 'title', 'sectionend', 'alg_wc_more_sorting_values', 'alg_wc_more_sorting_dashboard' ) ) ) { 
 					continue;
 				}
 				if ( isset( $setting['title'] ) ) {
