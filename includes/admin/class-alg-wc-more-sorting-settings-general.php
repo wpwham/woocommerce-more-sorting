@@ -122,7 +122,9 @@ class Alg_WC_More_Sorting_Settings_General extends Alg_WC_More_Sorting_Settings_
 			array(
 				'title'     => __( 'More Sorting for WooCommerce', 'woocommerce-more-sorting' ),
 				'desc'      => '<strong>' . __( 'Enable Plugin', 'woocommerce-more-sorting' ) . '</strong>',
-				'desc_tip'  => __( 'Add new custom, rearrange, remove or rename WooCommerce sorting options.', 'woocommerce-more-sorting' ),
+				'desc_tip'  => __( 'Add new custom, rearrange, remove or rename WooCommerce sorting options.', 'woocommerce-more-sorting' )
+					. '<br /><br /><a href="https://wpwham.com/documentation/more-sorting-options-for-woocommerce/?utm_source=documentation_link&utm_campaign=free&utm_medium=more_sorting" target="_blank" class="button">'
+					. __( 'Documentation', 'woocommerce-more-sorting' ) . '</a>',
 				'id'        => 'alg_wc_more_sorting_enabled',
 				'default'   => 'yes',
 				'type'      => 'checkbox',
