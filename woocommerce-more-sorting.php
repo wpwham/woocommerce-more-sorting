@@ -128,7 +128,7 @@ final class Alg_Woocommerce_More_Sorting {
 			basename( __FILE__ ) === 'woocommerce-more-sorting.php' &&
 			! class_exists( 'Alg_Woocommerce_More_Sorting_Pro' )
 		) {
-			$custom_links[] = '<a href="https://wpwham.com/products/more-sorting-options-for-woocommerce/?utm_source=Plugin&utm_content=plugins_php&utm_campaign=Free">' .
+			$custom_links[] = '<a href="https://wpwham.com/products/more-sorting-options-for-woocommerce/?utm_source=plugins_page&utm_campaign=free&utm_medium=more_sorting">' .
 				__( 'Unlock all', 'woocommerce-more-sorting' ) . '</a>';
 		}
 		return array_merge( $custom_links, $links );

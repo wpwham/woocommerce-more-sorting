@@ -50,7 +50,7 @@ class Alg_WC_More_Sorting_Settings_Remove_Sorting extends Alg_WC_More_Sorting_Se
 					'custom_attributes' => apply_filters( 'alg_wc_more_sorting', array( 'disabled' => 'disabled' ), 'settings' ),
 					'desc_tip'  => apply_filters( 'alg_wc_more_sorting',
 						sprintf( __( 'You will need %s plugin to enable this option.', 'woocommerce-more-sorting' ),
-							'<a target="_blank" href="https://wpwham.com/products/more-sorting-options-for-woocommerce/?utm_source=Plugin&utm_content=settings_remove_sorting&utm_campaign=Free">' .
+							'<a target="_blank" href="https://wpwham.com/products/more-sorting-options-for-woocommerce/?utm_source=settings_remove_sorting&utm_campaign=free&utm_medium=more_sorting">' .
 								__( 'More Sorting Options for WooCommerce Pro', 'woocommerce-more-sorting' ) . '</a>'
 						),
 						'settings'
@@ -84,7 +84,7 @@ class Alg_WC_More_Sorting_Settings_Remove_Sorting extends Alg_WC_More_Sorting_Se
 				'custom_attributes' => apply_filters( 'alg_wc_more_sorting', array( 'disabled' => 'disabled' ), 'settings' ),
 				'desc_tip'  => apply_filters( 'alg_wc_more_sorting',
 					sprintf( __( 'You will need %s plugin to enable this section.', 'woocommerce-more-sorting' ),
-						'<a target="_blank" href="https://wpwham.com/products/more-sorting-options-for-woocommerce/">' .
+						'<a target="_blank" href="https://wpwham.com/products/more-sorting-options-for-woocommerce/?utm_source=settings_remove_sorting&utm_campaign=free&utm_medium=more_sorting">' .
 							__( 'More Sorting Options for WooCommerce Pro', 'woocommerce-more-sorting' ) . '</a>'
 					),
 					'settings'
