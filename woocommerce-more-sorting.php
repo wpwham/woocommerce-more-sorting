@@ -47,12 +47,10 @@ if ( ! alg_is_plugin_active( 'woocommerce.php' ) ) {
 	return;
 }
 
-// Disables free version if PRO is enabled
-register_activation_hook( __FILE__, function () {	
-	if ( 'woocommerce-more-sorting.php' === basename( __FILE__ ) && alg_is_plugin_active( 'woocommerce-more-sorting-pro.php' ) ) {		
-		die(sprintf(__('<strong>%1$s</strong> could not be enabled as <a href="%2$s" target="blank">Premium version</a> is enabled','woocommerce-more-sorting'),__('More Sorting Options for WooCommerce','woocommerce-more-sorting'),'https://wpwham.com/products/more-sorting-options-for-woocommerce/?utm_source=Plugin&utm_content=double_activation&utm_campaign=Free'));	
-	}
-} );
+// Check if Pro is active, if so then return
+if ( basename( __FILE__ ) === 'woocommerce-more-sorting.php' && alg_is_plugin_active( 'woocommerce-more-sorting-pro.php' ) ) {
+	return;
+}
 
 if ( ! class_exists( 'Alg_Woocommerce_More_Sorting' ) ) :
 
