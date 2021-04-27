@@ -2,8 +2,8 @@
 Contributors: wpwham
 Tags: woocommerce, sorting, sort
 Requires at least: 4.4
-Tested up to: 5.6
-Stable tag: 3.2.7
+Tested up to: 5.7
+Stable tag: 3.2.8
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -69,6 +69,9 @@ Yes, You can set added sorting options work as default - just go to "WooCommerce
 1. Admin options.
 
 == Changelog ==
+
+= 3.2.8 - 2021-04-27 =
+* UPDATE: updated .pot file for translations.
 
 = 3.2.7 - 2021-01-20 =
 * UPDATE: bump tested versions.

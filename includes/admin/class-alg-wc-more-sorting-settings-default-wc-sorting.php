@@ -31,7 +31,7 @@ class Alg_WC_More_Sorting_Settings_Default_WC_Sorting extends Alg_WC_More_Sortin
 	/**
 	 * get_settings.
 	 *
-	 * @version 3.2.5
+	 * @version 3.2.8
 	 * @since   3.1.0
 	 */
 	public static function get_settings() {

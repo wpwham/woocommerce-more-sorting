@@ -35,7 +35,7 @@ class Alg_WC_More_Sorting_Settings_Remove_Sorting extends Alg_WC_More_Sorting_Se
 	/*
 	 * Add "Remove All Sorting" checkbox to WooCommerce > Settings > Products > Display.
 	 *
-	 * @version 3.0.0
+	 * @version 3.2.8
 	 */
 	function add_remove_sorting_checkbox( $settings ) {
 		$updated_settings = array();
@@ -65,7 +65,7 @@ class Alg_WC_More_Sorting_Settings_Remove_Sorting extends Alg_WC_More_Sorting_Se
 	/**
 	 * get_settings.
 	 *
-	 * @version 3.2.5
+	 * @version 3.2.8
 	 * @since   3.1.0
 	 */
 	public static function get_settings() {

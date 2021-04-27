@@ -110,7 +110,7 @@ class Alg_WC_More_Sorting_Settings_General extends Alg_WC_More_Sorting_Settings_
 	/**
 	 * get_settings.
 	 *
-	 * @version 3.2.5
+	 * @version 3.2.8
 	 */
 	public static function get_settings() {
 		$settings = array(
