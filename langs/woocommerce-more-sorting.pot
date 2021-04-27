@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: More Sorting Options for WooCommerce\n"
-"POT-Creation-Date: 2020-08-19 07:02-0700\n"
+"POT-Creation-Date: 2021-04-27 16:33-0700\n"
 "PO-Revision-Date: 2019-06-22 17:19-0700\n"
 "Last-Translator: \n"
 "Language-Team: WP Wham <support@wpwham.com>\n"
@@ -318,7 +318,7 @@ msgid "Status"
 msgstr ""
 
 #: includes/admin/class-alg-wc-more-sorting-settings-general.php:98
-#: woocommerce-more-sorting.php:126
+#: woocommerce-more-sorting.php:124
 msgid "Settings"
 msgstr ""
 
@@ -346,6 +346,10 @@ msgstr ""
 #: includes/admin/class-alg-wc-more-sorting-settings-general.php:125
 msgid ""
 "Add new custom, rearrange, remove or rename WooCommerce sorting options."
+msgstr ""
+
+#: includes/admin/class-alg-wc-more-sorting-settings-general.php:127
+msgid "Documentation"
 msgstr ""
 
 #: includes/admin/class-alg-wc-more-sorting-settings-rearrange-sorting.php:50
@@ -511,24 +515,16 @@ msgstr ""
 msgid "No sorting"
 msgstr ""
 
-#: woocommerce-more-sorting.php:53
-#, php-format
-msgid ""
-"<strong>%1$s</strong> could not be enabled as <a href=\"%2$s\" target=\"blank"
-"\">Premium version</a> is enabled"
-msgstr ""
-
-#. Plugin Name of the plugin/theme
-#: woocommerce-more-sorting.php:53
-msgid "More Sorting Options for WooCommerce"
-msgstr ""
-
-#: woocommerce-more-sorting.php:132
+#: woocommerce-more-sorting.php:130
 msgid "Unlock all"
 msgstr ""
 
-#: woocommerce-more-sorting.php:168
+#: woocommerce-more-sorting.php:166
 msgid "More Sorting Settings"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "More Sorting Options for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
