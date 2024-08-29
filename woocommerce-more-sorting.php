@@ -63,6 +63,8 @@ if ( ! class_exists( 'Alg_Woocommerce_More_Sorting' ) ) :
  */
 final class Alg_Woocommerce_More_Sorting {
 
+	public $settings = null;
+	
 	/**
 	 * Plugin version
 	 */
