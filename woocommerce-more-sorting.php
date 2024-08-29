@@ -52,6 +52,12 @@ if ( basename( __FILE__ ) === 'woocommerce-more-sorting.php' && alg_is_plugin_ac
 	return;
 }
 
+add_action( 'before_woocommerce_init', function() {
+	if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+	}
+} );
+
 if ( ! class_exists( 'Alg_Woocommerce_More_Sorting' ) ) :
 
 /**
