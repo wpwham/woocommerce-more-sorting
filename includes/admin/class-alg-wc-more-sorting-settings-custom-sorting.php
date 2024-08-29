@@ -16,6 +16,9 @@ if ( ! class_exists( 'Alg_WC_More_Sorting_Settings_Custom_Sorting' ) ) :
 
 class Alg_WC_More_Sorting_Settings_Custom_Sorting extends Alg_WC_More_Sorting_Settings_Section {
 
+	public $id   = '';
+	public $desc = '';
+	
 	/**
 	 * Constructor.
 	 *
