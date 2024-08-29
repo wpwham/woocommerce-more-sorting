@@ -3,14 +3,12 @@
 Plugin Name: More Sorting Options for WooCommerce
 Plugin URI: https://wpwham.com/products/more-sorting-options-for-woocommerce/
 Description: Add new custom, rearrange, remove or rename WooCommerce sorting options.
-Version: 3.2.9
+Version: 3.2.10
 Author: WP Wham
 Author URI: https://wpwham.com
 Text Domain: woocommerce-more-sorting
 Domain Path: /langs
-WC requires at least: 3.0.0
-WC tested up to: 6.5
-Copyright: © 2018-2022 WP Wham. All rights reserved.
+Copyright: © 2018-2024 WP Wham. All rights reserved.
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -64,7 +62,7 @@ if ( ! class_exists( 'Alg_Woocommerce_More_Sorting' ) ) :
  * Main Alg_Woocommerce_More_Sorting Class
  *
  * @class   Alg_Woocommerce_More_Sorting
- * @version 3.2.9
+ * @version 3.2.10
  * @since   1.0.0
  */
 final class Alg_Woocommerce_More_Sorting {
@@ -74,7 +72,7 @@ final class Alg_Woocommerce_More_Sorting {
 	/**
 	 * Plugin version
 	 */
-	public $version = '3.2.9';
+	public $version = '3.2.10';
 
 	/**
 	 * @var Alg_Woocommerce_More_Sorting The single instance of the class
