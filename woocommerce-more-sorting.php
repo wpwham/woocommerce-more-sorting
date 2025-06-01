@@ -3,12 +3,12 @@
 Plugin Name: More Sorting Options for WooCommerce
 Plugin URI: https://wpwham.com/products/more-sorting-options-for-woocommerce/
 Description: Add new custom, rearrange, remove or rename WooCommerce sorting options.
-Version: 3.2.10
+Version: 3.2.11
 Author: WP Wham
 Author URI: https://wpwham.com
 Text Domain: woocommerce-more-sorting
 Domain Path: /langs
-Copyright: © 2018-2024 WP Wham. All rights reserved.
+Copyright: © 2018-2025 WP Wham. All rights reserved.
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -62,7 +62,7 @@ if ( ! class_exists( 'Alg_Woocommerce_More_Sorting' ) ) :
  * Main Alg_Woocommerce_More_Sorting Class
  *
  * @class   Alg_Woocommerce_More_Sorting
- * @version 3.2.10
+ * @version 3.2.11
  * @since   1.0.0
  */
 final class Alg_Woocommerce_More_Sorting {
@@ -72,7 +72,7 @@ final class Alg_Woocommerce_More_Sorting {
 	/**
 	 * Plugin version
 	 */
-	public $version = '3.2.10';
+	public $version = '3.2.11';
 
 	/**
 	 * @var Alg_Woocommerce_More_Sorting The single instance of the class
@@ -98,13 +98,13 @@ final class Alg_Woocommerce_More_Sorting {
 	 * Alg_Woocommerce_More_Sorting Constructor.
 	 *
 	 * @access  public
-	 * @version 3.2.5
+	 * @version 3.2.11
 	 * @since   3.0.0
 	 */
 	function __construct() {
 
 		// Set up localisation
-		load_plugin_textdomain( 'woocommerce-more-sorting', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
+		add_action( 'init', array( $this, 'load_localization' ) );
 
 		// Include required files
 		$this->includes();
@@ -115,6 +115,13 @@ final class Alg_Woocommerce_More_Sorting {
 			add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
 			add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
 		}
+	}
+			
+	/**
+	 * @since   3.2.11
+	 */
+	public function load_localization() {
+		load_plugin_textdomain( 'woocommerce-more-sorting', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
 	}
 
 	/**
