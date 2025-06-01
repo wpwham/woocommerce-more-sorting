@@ -104,7 +104,7 @@ final class Alg_Woocommerce_More_Sorting {
 	function __construct() {
 
 		// Set up localisation
-		load_plugin_textdomain( 'woocommerce-more-sorting', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
+		add_action( 'init', array( $this, 'load_localization' ) );
 
 		// Include required files
 		$this->includes();
@@ -115,6 +115,13 @@ final class Alg_Woocommerce_More_Sorting {
 			add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
 			add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
 		}
+	}
+			
+	/**
+	 * @since   3.2.11
+	 */
+	public function load_localization() {
+		load_plugin_textdomain( 'woocommerce-more-sorting', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
 	}
 
 	/**
