@@ -104,10 +104,10 @@ final class Alg_Woocommerce_More_Sorting {
 	function __construct() {
 
 		// Set up localisation
-		add_action( 'init', array( $this, 'load_localization' ) );
+		add_action( 'plugins_loaded', array( $this, 'load_localization' ) );
 
 		// Include required files
-		$this->includes();
+		add_action( 'init', array( $this, 'includes' ) );
 
 		// Settings
 		if ( is_admin() ) {
