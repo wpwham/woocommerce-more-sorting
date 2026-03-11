@@ -66,19 +66,19 @@ if ( ! class_exists( 'Alg_Woocommerce_More_Sorting' ) ) :
  * @since   1.0.0
  */
 final class Alg_Woocommerce_More_Sorting {
-
+	
 	public $settings = null;
 	
 	/**
 	 * Plugin version
 	 */
 	public $version = '3.2.11';
-
+	
 	/**
 	 * @var Alg_Woocommerce_More_Sorting The single instance of the class
 	 */
 	protected static $_instance = null;
-
+	
 	/**
 	 * Main Alg_Woocommerce_More_Sorting Instance
 	 *
@@ -93,7 +93,7 @@ final class Alg_Woocommerce_More_Sorting {
 		}
 		return self::$_instance;
 	}
-
+	
 	/**
 	 * Alg_Woocommerce_More_Sorting Constructor.
 	 *
@@ -101,29 +101,19 @@ final class Alg_Woocommerce_More_Sorting {
 	 * @version 3.2.11
 	 * @since   3.0.0
 	 */
-	function __construct() {
-
-		// Set up localisation
-		add_action( 'plugins_loaded', array( $this, 'load_localization' ) );
-
-		// Include required files
+	public function __construct() {
+		
+		// Global
 		add_action( 'init', array( $this, 'includes' ) );
-
-		// Settings
-		if ( is_admin() ) {
-			add_filter( 'woocommerce_get_settings_pages', array( $this, 'add_woocommerce_settings_tab' ) );
-			add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
-			add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
-		}
+		
+		// Admin
+		add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
+		add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
+		add_filter( 'woocommerce_get_settings_pages', array( $this, 'add_woocommerce_settings_tab' ) );
+		
 	}
-			
-	/**
-	 * @since   3.2.11
-	 */
-	public function load_localization() {
-		load_plugin_textdomain( 'woocommerce-more-sorting', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
-	}
-
+	
+	
 	/**
 	 * Show action links on the plugin screen.
 	 *
@@ -214,11 +204,14 @@ final class Alg_Woocommerce_More_Sorting {
 	 *
 	 * @version 3.1.2
 	 */
-	function includes() {
-
+	public function includes() {
+		
+		// Localization
+		load_plugin_textdomain( 'woocommerce-more-sorting', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
+		
 		// Functions
 		require_once( 'includes/alg-wc-more-sorting-functions.php' );
-
+		
 		// Settings
 		require_once( 'includes/admin/class-alg-wc-more-sorting-settings-section.php' );
 		$this->settings = array();
@@ -241,11 +234,13 @@ final class Alg_Woocommerce_More_Sorting {
 			$this->handle_deprecated_options();
 			update_option( 'alg_wc_more_sorting_version', $this->version );
 		}
-
+		
 		// Core
 		require_once( 'includes/class-alg-wc-more-sorting.php' );
+		
 	}
-
+	
+	
 	/**
 	 * handle_deprecated_options.
 	 *
