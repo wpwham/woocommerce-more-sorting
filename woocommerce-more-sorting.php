@@ -3,12 +3,12 @@
 Plugin Name: More Sorting Options for WooCommerce
 Plugin URI: https://wpwham.com/products/more-sorting-options-for-woocommerce/
 Description: Add new custom, rearrange, remove or rename WooCommerce sorting options.
-Version: 3.2.11
+Version: 3.2.12
 Author: WP Wham
 Author URI: https://wpwham.com
 Text Domain: woocommerce-more-sorting
 Domain Path: /langs
-Copyright: © 2018-2025 WP Wham. All rights reserved.
+Copyright: © 2018-2026 WP Wham. All rights reserved.
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -62,23 +62,23 @@ if ( ! class_exists( 'Alg_Woocommerce_More_Sorting' ) ) :
  * Main Alg_Woocommerce_More_Sorting Class
  *
  * @class   Alg_Woocommerce_More_Sorting
- * @version 3.2.11
+ * @version 3.2.12
  * @since   1.0.0
  */
 final class Alg_Woocommerce_More_Sorting {
-
+	
 	public $settings = null;
 	
 	/**
 	 * Plugin version
 	 */
-	public $version = '3.2.11';
-
+	public $version = '3.2.12';
+	
 	/**
 	 * @var Alg_Woocommerce_More_Sorting The single instance of the class
 	 */
 	protected static $_instance = null;
-
+	
 	/**
 	 * Main Alg_Woocommerce_More_Sorting Instance
 	 *
@@ -93,37 +93,27 @@ final class Alg_Woocommerce_More_Sorting {
 		}
 		return self::$_instance;
 	}
-
+	
 	/**
 	 * Alg_Woocommerce_More_Sorting Constructor.
 	 *
 	 * @access  public
-	 * @version 3.2.11
+	 * @version 3.2.12
 	 * @since   3.0.0
 	 */
-	function __construct() {
-
-		// Set up localisation
-		add_action( 'init', array( $this, 'load_localization' ) );
-
-		// Include required files
-		$this->includes();
-
-		// Settings
-		if ( is_admin() ) {
-			add_filter( 'woocommerce_get_settings_pages', array( $this, 'add_woocommerce_settings_tab' ) );
-			add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
-			add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
-		}
+	public function __construct() {
+		
+		// Global
+		add_action( 'init', array( $this, 'includes' ) );
+		
+		// Admin
+		add_action( 'woocommerce_system_status_report', array( $this, 'add_settings_to_status_report' ) );
+		add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
+		add_filter( 'woocommerce_get_settings_pages', array( $this, 'add_woocommerce_settings_tab' ) );
+		
 	}
-			
-	/**
-	 * @since   3.2.11
-	 */
-	public function load_localization() {
-		load_plugin_textdomain( 'woocommerce-more-sorting', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
-	}
-
+	
+	
 	/**
 	 * Show action links on the plugin screen.
 	 *
@@ -212,13 +202,17 @@ final class Alg_Woocommerce_More_Sorting {
 	/**
 	 * Include required core files used in admin and on the frontend.
 	 *
-	 * @version 3.1.2
+	 * @version 3.2.12
+	 * @since   2.0.0
 	 */
-	function includes() {
-
+	public function includes() {
+		
+		// Localization
+		load_plugin_textdomain( 'woocommerce-more-sorting', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
+		
 		// Functions
 		require_once( 'includes/alg-wc-more-sorting-functions.php' );
-
+		
 		// Settings
 		require_once( 'includes/admin/class-alg-wc-more-sorting-settings-section.php' );
 		$this->settings = array();
@@ -241,11 +235,13 @@ final class Alg_Woocommerce_More_Sorting {
 			$this->handle_deprecated_options();
 			update_option( 'alg_wc_more_sorting_version', $this->version );
 		}
-
+		
 		// Core
 		require_once( 'includes/class-alg-wc-more-sorting.php' );
+		
 	}
-
+	
+	
 	/**
 	 * handle_deprecated_options.
 	 *

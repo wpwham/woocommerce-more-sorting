@@ -2,9 +2,10 @@
 /**
  * WooCommerce More Sorting - Restore Default
  *
- * @version 3.1.5
+ * @version 3.2.12
  * @since   3.1.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -18,13 +19,12 @@ class WC_Alg_More_Sorting_Restore_Default {
 	/**
 	 * Constructor.
 	 *
-	 * @version 3.1.0
+	 * @version 3.2.12
 	 * @since   3.1.0
 	 */
 	function __construct() {
-		add_action( 'init',    array( $this, 'restore_default_woocommerce_sorting' ),       PHP_INT_MAX );
-		//add_action( 'after_setup_theme',    array( $this, 'restore_default_woocommerce_sorting' ),       PHP_INT_MAX );
 		add_action( 'wp_head', array( $this, 'restore_default_woocommerce_sorting_style' ), PHP_INT_MAX );
+		add_action( 'wp_loaded', array( $this, 'restore_default_woocommerce_sorting' ), PHP_INT_MAX );
 	}
 
 	/**
