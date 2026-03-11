@@ -2,9 +2,10 @@
 /**
  * WooCommerce More Sorting - Restore Default
  *
- * @version 3.1.5
+ * @version 3.2.12
  * @since   3.1.0
  * @author  Algoritmika Ltd.
+ * @author  WP Wham
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -18,7 +19,7 @@ class WC_Alg_More_Sorting_Restore_Default {
 	/**
 	 * Constructor.
 	 *
-	 * @version 3.1.0
+	 * @version 3.2.12
 	 * @since   3.1.0
 	 */
 	function __construct() {
