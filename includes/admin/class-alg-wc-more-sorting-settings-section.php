@@ -23,7 +23,7 @@ class Alg_WC_More_Sorting_Settings_Section {
 	 */
 	function __construct() {
 		add_filter( 'woocommerce_get_sections_alg_more_sorting',                   array( $this, 'settings_section' ) );
-		add_filter( 'woocommerce_get_settings_alg_more_sorting' . '_' . $this->id, array( $this, 'get_settings' ), 10 );
+		add_filter( 'woocommerce_get_settings_alg_more_sorting' . '_' . $this->id, array( $this, 'get_settings' ) );
 	}
 
 	/**
