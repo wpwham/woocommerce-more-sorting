@@ -238,6 +238,9 @@ class WC_Alg_More_Sorting {
 		} else {
 			$rearranged_sorting = array_map( 'trim', explode( PHP_EOL, $rearranged_sorting ) );
 		}
+		
+		$rearranged_sorting = apply_filters( 'wpwham_more_sorting_rearrange_sorting_list', $rearranged_sorting, $sortby );
+		
 		$rearranged_sortby = array();
 		foreach ( $rearranged_sorting as $sorting ) {
 			if ( isset( $sortby[ $sorting ] ) ) {
