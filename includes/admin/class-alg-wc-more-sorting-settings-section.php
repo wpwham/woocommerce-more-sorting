@@ -2,7 +2,7 @@
 /**
  * More Sorting for WooCommerce - Section Settings
  *
- * @version 3.1.2
+ * @version 3.2.13
  * @since   3.1.0
  * @author  Algoritmika Ltd.
  */
@@ -18,12 +18,12 @@ class Alg_WC_More_Sorting_Settings_Section {
 	/**
 	 * Constructor.
 	 *
-	 * @version 3.1.2
+	 * @version 3.2.13
 	 * @since   3.1.0
 	 */
 	function __construct() {
 		add_filter( 'woocommerce_get_sections_alg_more_sorting',                   array( $this, 'settings_section' ) );
-		add_filter( 'woocommerce_get_settings_alg_more_sorting' . '_' . $this->id, array( $this, 'get_settings' ), PHP_INT_MAX );
+		add_filter( 'woocommerce_get_settings_alg_more_sorting' . '_' . $this->id, array( $this, 'get_settings' ) );
 	}
 
 	/**
