@@ -2,7 +2,7 @@
 /**
  * More Sorting for WooCommerce - Section Settings
  *
- * @version 3.1.2
+ * @version 3.2.13
  * @since   3.1.0
  * @author  Algoritmika Ltd.
  */
@@ -18,7 +18,7 @@ class Alg_WC_More_Sorting_Settings_Section {
 	/**
 	 * Constructor.
 	 *
-	 * @version 3.1.2
+	 * @version 3.2.13
 	 * @since   3.1.0
 	 */
 	function __construct() {
