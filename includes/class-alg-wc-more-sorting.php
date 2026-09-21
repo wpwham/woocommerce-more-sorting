@@ -137,6 +137,11 @@ class WC_Alg_More_Sorting {
 				$args['order']    = $order == 'DESC' ? 'DESC' : 'ASC';
 				$args['meta_key'] = '_stock';
 			break;
+			case 'weight':
+				$args['orderby']  = 'meta_value_num ID';
+				$args['order']    = $order == 'DESC' ? 'DESC' : 'ASC';
+				$args['meta_key'] = '_weight';
+			break;
 			case 'total_sales':
 				$args['orderby']  = 'meta_value_num ID';
 				$args['order']    = $order == 'DESC' ? 'DESC' : 'ASC';
