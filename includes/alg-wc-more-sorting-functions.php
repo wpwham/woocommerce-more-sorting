@@ -81,6 +81,8 @@ if ( ! function_exists( 'alg_wc_more_sorting_get_custom_sorting_options' ) ) {
 			'sku-desc'            => __( 'Sort by SKU', 'woocommerce-more-sorting' ) . ': ' . __( 'high to low', 'woocommerce-more-sorting' ),
 			'stock_quantity-asc'  => __( 'Sort by stock quantity', 'woocommerce-more-sorting' ) . ': ' . __( 'low to high', 'woocommerce-more-sorting' ),
 			'stock_quantity-desc' => __( 'Sort by stock quantity', 'woocommerce-more-sorting' ) . ': ' . __( 'high to low', 'woocommerce-more-sorting' ),
+			'weight-asc'          => __( 'Sort by weight', 'woocommerce-more-sorting' ) . ': ' . __( 'low to high', 'woocommerce-more-sorting' ),
+			'weight-desc'         => __( 'Sort by weight', 'woocommerce-more-sorting' ) . ': ' . __( 'high to low', 'woocommerce-more-sorting' ),
 			'total_sales-asc'     => __( 'Sort by total sales', 'woocommerce-more-sorting' ) . ': ' . __( 'low to high', 'woocommerce-more-sorting' ),
 			'total_sales-desc'    => __( 'Sort by total sales', 'woocommerce-more-sorting' ) . ': ' . __( 'high to low', 'woocommerce-more-sorting' ),
 			'modified-asc'        => __( 'Sort by last modified date', 'woocommerce-more-sorting' ) . ': ' . __( 'oldest to newest', 'woocommerce-more-sorting' ),
