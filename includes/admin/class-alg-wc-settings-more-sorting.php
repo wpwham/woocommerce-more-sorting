@@ -115,6 +115,9 @@ class Alg_WC_Settings_More_Sorting extends WC_Settings_Page {
 	function save() {
 		parent::save();
 		$this->maybe_reset_settings();
+		if ( 'yes' !== get_option( 'wpwham_more_sorting_settings_saved', 'no' ) ) {
+			update_option( 'wpwham_more_sorting_settings_saved', 'yes', false );
+		}
 		wp_safe_redirect( add_query_arg( 'alg_wc_more_sorting_settings_saved', true ) );
 		exit;
 	}
