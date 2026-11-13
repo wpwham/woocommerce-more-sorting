@@ -215,6 +215,7 @@ final class Alg_Woocommerce_More_Sorting {
 		
 		// Settings
 		require_once( 'includes/admin/class-alg-wc-more-sorting-settings-section.php' );
+		require_once( 'includes/class-wpwham-more-sorting-review.php' );
 		$this->settings = array();
 		$this->settings['general']             = require_once( 'includes/admin/class-alg-wc-more-sorting-settings-general.php' );
 		$this->settings['custom-sorting']      = require_once( 'includes/admin/class-alg-wc-more-sorting-settings-custom-sorting.php' );
